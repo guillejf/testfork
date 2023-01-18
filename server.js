@@ -1,3 +1,10 @@
+require("dotenv").config();
+let argv = require("minimist")(process.argv.slice(2));
+console.log(argv["_"][0]);
+
+console.log(process.env.MONGO_DB);
+console.log(process.env.OTRA_COSA);
+
 const http = require("http");
 const { fork } = require("child_process");
 
